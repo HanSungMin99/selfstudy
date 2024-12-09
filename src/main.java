@@ -124,6 +124,69 @@ public class main {
 //        }
 //        Arrays.fill(stArr, "hello");
 //        System.out.println(Arrays.toString(stArr));
+
+//        //ArrayList<String> myList1 = new ArrayList<String>(); //int는 안되고 Integer가 들어와야 한다.
+//        //ArrayList<String> myList2 = new ArrayList<>(); //오른쪽<>은 값입력 생략 가능함
+//
+//        //가장 일반적인 List 선언 방식
+//        List<String> myList3 = new ArrayList<>();
+//        //왼쪽의 List는 인터페이스이며, 오른쪽의 ArrayList는 클래스명이다.
+//        //ArrayList는 List의 기능을 구현해내면서, 자기자신만의 메서드도 가지고 있다.
+//        //size를 먼저 선언하지 않는다.
+
+//        //초기값 생성방법1: 하나씩 add
+//        //List는 size지정 필요없다. 그냥 add하여 더하기만 하면 된다.
+////        myList3.add("java");
+////        myList3.add("python");
+////        myList3.add("C++");
+//        //초기값 생성방법2: 배열을 리스트로 변환
+//        String[] arr = {"java", "python", "C++"};
+//        List<String> myList = new ArrayList<>(Arrays.asList(arr));
+//        //new ArrayList<>(arr); 은 안됨, 배열을 그냥 집어넣을 수 없음
+//        System.out.println(Arrays.deepToString(myList.toArray()));
+
+//        //add메서드
+//        List<Integer> myList = new ArrayList<>();
+//        myList.add(10);
+//        myList.add(20);
+//        System.out.println(myList);
+//        myList.add(0,30); //이렇게 하면 심각한 성능저하 발생, 올바른 사용 방식이 아님.
+//        System.out.println(myList);
+//        List<Integer> myList2 = new ArrayList<>(myList);
+//        myList2.addAll(myList);
+//
+//        //get(index): 특정 index의 요소를 반환
+//        System.out.println(myList.get(0));
+
+//        //for문 활용해 list의 값 하나씩 모두 출력
+//        for(int i=0; i<myList.size(); i++){
+//            System.out.println(myList.get(i));
+//        }
+//        for(int a : myList){
+//            System.out.println(a);
+//        }
+
+//        List<Integer> myList = new ArrayList<>();
+//        myList.add(10);
+//        myList.add(20);
+//        myList.add(20);
+//        myList.add(30);
+//        //indexOf: 가장 먼저 나오는 값의 index return;
+//        System.out.println(myList.indexOf(20));
+
+//        String[] arr = {"농구", "축구", "농구", "야구", "축구"};
+//        // 농구: 2, 축구: 2, 야구: 1
+//        Map<String, Integer> sports = new HashMap<>();
+//        for(String a : arr){
+//            if(sports.containsKey(a)){
+//                sports.put(a, sports.get(a)+1);
+//            }else {
+//                sports.put(a, 1);
+//            }
+//        }
+//        System.out.println(sports);
+
+
     }
 }
 
